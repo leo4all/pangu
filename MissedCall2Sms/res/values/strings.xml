@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_number">请输入接收短信的电话号码</string>
+	<string name="app_name">漏电转短信</string>
+	<string name="describe">未接来电转短信</string>
+	<string name="copyright">未接来电转短信 Ver 0.1 \n Bitbee Studios</string>
+	<string name="button_start">开始监控</string>
+	<string name="button_stop">停止监控</string>
+	<string name="ok">确定</string>
+	<string name="about">关于</string>
+	<string name="exit">退出</string>
+	<string name="info_running">未接来电转短信运行中……</string>
+	<string name="info_end">结束未接来电转短信服务</string>
+	<string name="info_already_run">未接来电转短信已经在运行中</string>
+	<string name="info_not_run">服务未开始，勿需停止</string>
+	<string name="buttons_toggle">开关</string>
+</resources>
