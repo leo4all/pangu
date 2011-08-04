@@ -18,6 +18,8 @@ public class MissedCallReceiver extends BroadcastReceiver {
    
     @Override
     public void onReceive(Context context, Intent intent) {
+    	
+    /*
 
     mNotificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
     
@@ -29,7 +31,7 @@ public class MissedCallReceiver extends BroadcastReceiver {
     notifyDetails.flags |= Notification.FLAG_AUTO_CANCEL;
     mNotificationManager.notify(SIMPLE_NOTFICATION_ID, notifyDetails);
           Log.i(getClass().getSimpleName(),"Sucessfully Changed Time");
-
-    }	
-
+          
+    */
+    }
 }

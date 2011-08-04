@@ -61,13 +61,13 @@ public class Main extends Activity {
 	private Button button_main;
 	private EditText field_phone_number;
 
-	//½çÃæÊÓÍ¼ÔØÈë
+	//ç•Œé¢è§†å›¾è½½å…¥
 	private void findViews(){
 		button_main = (Button)findViewById(R.id.button_main);
 		field_phone_number = (EditText)findViewById(R.id.phone_number);
 	}
 	
-	//ÊÂ¼ş¼àÌı
+	//äº‹ä»¶ç›‘å¬
 	private void setListeners(){
 		button_main.setOnClickListener(mainListener);
 	}
@@ -88,17 +88,17 @@ public class Main extends Activity {
 		}
 	}
 	
-	//¿ªÊ¼¼àÌı°´Å¥ÊÂ¼ş
+	//å¼€å§‹ç›‘å¬æŒ‰é’®äº‹ä»¶
 	private Button.OnClickListener mainListener = new Button.OnClickListener(){
 		public void onClick(View v) {
 			doMissedCall2Sms();
 		}
 	};
 	
-	//¿ªÊ¼Â©µç¼àÌı
+	//å¼€å§‹æ¼ç”µç›‘å¬
 	private void doMissedCall2Sms(){
 		if("".equals(field_phone_number.getText().toString()) || !checkMobile(field_phone_number.getText().toString())){
-			Toast.makeText(this, "½ÓÊÕ¶ÌĞÅºÅÂë²»ÄÜÎª¿Õ£¬»òÕßºÅÂë²»ÕıÈ·", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "æ¥æ”¶çŸ­ä¿¡å·ç ä¸èƒ½ä¸ºç©ºï¼Œæˆ–è€…å·ç ä¸æ­£ç¡®", Toast.LENGTH_LONG).show();
 		}else if(button_main.getText().toString().equals(getText(R.string.button_start))){
 			_startService();
 			button_main.setText(getText(R.string.button_stop));
@@ -111,7 +111,7 @@ public class Main extends Activity {
 	}	
 	
 	
-	//¿ªÊ¼Â©µç¼àÌı
+	//å¼€å§‹æ¼ç”µç›‘å¬
 	private void _startService() {
 		Intent intent = new Intent(this, MissedCall2SmsService.class);
 		Bundle bundle = new Bundle();
@@ -123,7 +123,7 @@ public class Main extends Activity {
 		
 	}
 	
-	//½áÊøÂ©µç¼àÌı
+	//ç»“æŸæ¼ç”µç›‘å¬
 	private void _stopService(){
 		Intent intent = new Intent(this, MissedCall2SmsService.class);
 		if(this.stopService(intent)){
@@ -148,7 +148,7 @@ public class Main extends Activity {
     	}
     }
     
-	//ÉèÖÃ×´Ì¬À¸ĞÅÏ¢ÌáÊ¾
+	//è®¾ç½®çŠ¶æ€æ ä¿¡æ¯æç¤º
 	private void startNotification(){
         mNotificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 		final Notification notifyDetails = new Notification(R.drawable.dog,getText(R.string.info_running),System.currentTimeMillis());

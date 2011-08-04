@@ -46,9 +46,9 @@ public class MissedCallContentObserver extends ContentObserver {
 						String _name = csr.getString(csr.getColumnIndex(Calls.CACHED_NAME));
 						
 						if(_name == null){
-							strMsg = _number + "ÓÚ" + df.format(csr.getLong(csr.getColumnIndex(Calls.DATE))) + "¸øÄã´ò¹ıµç»°¡£";
+							strMsg = _number + "äº" + df.format(csr.getLong(csr.getColumnIndex(Calls.DATE))) + "ç»™ä½ æ‰“è¿‡ç”µè¯ã€‚";
 						}else{
-							strMsg = _number + "(" + _name  + ")ÓÚ" +  df.format(csr.getLong(csr.getColumnIndex(Calls.DATE))) + "¸øÄã´ò¹ıµç»°¡£";
+							strMsg = _number + "(" + _name  + ")äº" +  df.format(csr.getLong(csr.getColumnIndex(Calls.DATE))) + "ç»™ä½ æ‰“è¿‡ç”µè¯ã€‚";
 						}
 						SmsManager smsMgr = SmsManager.getDefault();
 						
