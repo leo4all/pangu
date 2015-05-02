@@ -1,0 +1,1 @@
+在Aro model中定义了创建新的ARO对象的方法：create()。该方法有3个参数：$link\_id $parent\_id $alias。此方法创建一个由$parent\_id指定的父对象之下的ACL对象，如果传入的$parent\_id为null，则作为一个根对象。$link\_id允许你将当前用户对象链接到Cake的ACL结构。$alias参数允许你放入一个非整型ID的对象。
